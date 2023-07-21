@@ -1,0 +1,12 @@
+#!name=極簡匯率
+#!desc=極簡匯率解鎖高級會員
+#!author=@chxm1023
+#!UpdateTime=2023-07-22
+
+[Script]
+
+极简汇率 = type=http-response,pattern=^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
+
+[MITM]
+
+hostname = %APPEND% explorer.tratao.com
