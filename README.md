@@ -15,7 +15,7 @@
   <tr><td> 06 </td><td> Picsew解鎖高級功能 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Picsew.module"><em>Picsew.module</em></a> </td><td> @Guding88 </td></tr>
   <tr><td> 07 </td><td> VSCO會員解鎖 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VSCO.module"><em>VSCO.module</em></a> </td><td> @NobyDa </td></tr>
   <tr><td> 08 </td><td> 微信公眾號去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeChat.module"><em>WeChat.module</em></a> </td><td> @ </td></tr>
-  <tr><td> 09 </td><td> 微博輕享版(原國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeiboLite.module"><em>WeiboLite.module</em></a> </td><td> @ddgksf2013 </td></tr>
+  <tr><td> 09 </td><td> 微博(國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Weibo.module"><em>Weibo.module</em></a> </td><td> @ddgksf2013 @zmqcherish </td></tr>
   <tr><td> 10 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
   <tr><td> 11 </td><td> 極簡匯率解鎖高級會員 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/xCurrency.module"><em>xCurrency.module</em></a> </td><td> @chxm1023 </td></tr>
 </table>
