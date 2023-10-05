@@ -1,0 +1,13 @@
+#!name=Flightradar24
+#!desc=Flightradar24解鎖GOLD會員功能
+#!author=@ddgksf2013
+#!UpdateTime=2023-08-13
+#非一次性解鎖，開啟模塊後，進入軟件即可。
+
+[Script]
+
+Flightradar24 = type=http-request, pattern=^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|\w{9}), script-path=https://github.com/ddgksf2013/dev/raw/main/flightradar24.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% mobile.flightradar24.com
