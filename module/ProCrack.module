@@ -1,0 +1,22 @@
+#!name=會員解鎖合集
+#!desc=會員解鎖合集
+#!author=@yqc007,@安妮,@Guding88,@NobyDa,@chxm1023
+#!UpdateTime=2023-10-24
+
+[Script]
+
+# > AdGuard解鎖永久高級版 @yqc007
+AdGuard = type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js
+# > Flightradar24解鎖GOLD會員功能 @安妮
+Flightradar24 = type=http-response,pattern=^https://mobile.flightradar24.com/mobile/(user-session|subscribe),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js
+# > Picsew解鎖高級功能 @Guding88
+Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, timeout=60, script-update-interval=0
+# > VSCO會員解鎖 @NobyDa
+VSCO = type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+VSCO = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+# > 極簡匯率解鎖高級會員 @chxm1023
+xCurrency = type=http-response,pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js
+
+[MITM]
+
+hostname = %APPEND% *.adguard.org,mobile.flightradar24.com,buy.itunes.apple.com,api.revenuecat.com,xremit.xcurrency.com,explorer.tratao.com
