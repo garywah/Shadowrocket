@@ -11,9 +11,9 @@
   <tr><td> 01 </td><td> AdGuard解鎖永久高級版 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/AdGuard.module"><em>AdGuard.module</em></a> </td><td> @yqc007 </td></tr>
   <tr><td> 02 </td><td> Flightradar24解鎖GOLD會員功能 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Flightradar24.module"><em>Flightradar24.module</em></a> </td><td> @安妮 </td></tr>
   <tr><td> 03 </td><td> Picsew解鎖高級功能 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Picsew.module"><em>Picsew.module</em></a> </td><td> @Guding88 </td></tr>
-  <tr><td> 04 </td><td> VSCO會員解鎖 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VSCO.module"><em>VSCO.module</em></a> </td><td> @NobyDa </td></tr>
+  <tr><td> 04 </td><td> VSCO會員解鎖 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VSCO.module"><em>VSCO.module</em></a> </td><td> @chxm1023 </td></tr>
   <tr><td> 05 </td><td> 極簡匯率解鎖高級會員 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/xCurrency.module"><em>xCurrency.module</em></a> </td><td> @chxm1023 </td></tr>
-  <tr><td> 06 </td><td> 會員解鎖合集 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/ProCrack.module"><em>ProCrack.module</em></a> </td><td> @yqc007 @安妮 @Guding88<br>@NobyDa @chxm1023 </td></tr>
+  <tr><td> 06 </td><td> 會員解鎖合集 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/ProCrack.module"><em>ProCrack.module</em></a> </td><td> @yqc007 @安妮<br>@Guding88 @chxm1023 </td></tr>
 </table>
 <table>
   <tr><th colspan="4"> 🚫廣告淨化 </th></tr>
