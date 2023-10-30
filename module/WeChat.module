@@ -1,0 +1,13 @@
+#!name=WeChat
+#!desc=WeChat公眾號圖文去廣告
+#!author=@ddgksf2013
+#!UpdateTime=2023-10-31
+
+[Script]
+
+# > WeChat公眾號圖文去廣告[不包含公眾號信息流AD、朋友圈AD]
+replaceBody_10 = type=http-response, pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, timeout=60, argument="advertisement->ddgksf2013"
+
+[MITM]
+
+hostname = %APPEND% mp.weixin.qq.com
