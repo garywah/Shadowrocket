@@ -1,0 +1,14 @@
+#!name=VVebo
+#!desc=VVebo修復用戶主頁
+#!author=@ddgksf2013
+#!UpdateTime=2023-11-30
+
+[Script]
+
+vvebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, script-path=https://raw.githubusercontent.com/bin64/Scripts/main/QuantumultX/vvebo.js, timeout=60, script-update-interval=0
+vvebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, script-path=https://raw.githubusercontent.com/bin64/Scripts/main/QuantumultX/vvebo.js, timeout=60, script-update-interval=0
+vvebo = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/bin64/Scripts/main/QuantumultX/vvebo.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% api.weibo.cn
