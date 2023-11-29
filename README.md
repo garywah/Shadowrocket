@@ -22,9 +22,10 @@
   <tr><td> 02 </td><td> 12306去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/12306.module"><em>12306.module</em></a> </td><td> @ddgksf2013 </td></tr>
   <tr><td> 03 </td><td> 高德地圖去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Amap.module"><em>Amap.module</em></a> </td><td> @ddgksf2013 </td></tr>
   <tr><td> 04 </td><td> 菜鳥去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Cainiao.module"><em>Cainiao.module</em></a> </td><td> @ddgksf2013 </td></tr>
-  <tr><td> 05 </td><td> 微信公眾號去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeChat.module"><em>WeChat.module</em></a> </td><td> @ddgksf2013 </td></tr>
-  <tr><td> 06 </td><td> 微博(國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Weibo.module"><em>Weibo.module</em></a> </td><td> @ddgksf2013 @zmqcherish </td></tr>
-  <tr><td> 07 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
+  <tr><td> 05 </td><td> VVebo修復用戶主頁 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VVebo.module"><em>VVebo.module</em></a> </td><td> @ddgksf2013 </td></tr>
+  <tr><td> 06 </td><td> 微信公眾號去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeChat.module"><em>WeChat.module</em></a> </td><td> @ddgksf2013 </td></tr>
+  <tr><td> 07 </td><td> 微博(國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Weibo.module"><em>Weibo.module</em></a> </td><td> @ddgksf2013 @zmqcherish </td></tr>
+  <tr><td> 08 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
 </table>
 
 本庫搬運自互聯網，方便個人使用。
