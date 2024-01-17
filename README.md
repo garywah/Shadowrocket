@@ -10,7 +10,7 @@
   <tr><th> 序號 </th><th> 功能 </th><th> 鏈接 </th><th> 作者 </th></tr>
   <tr><td> 01 </td><td> AdGuard解鎖永久高級版 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/AdGuard.module"><em>AdGuard.module</em></a> </td><td> @yqc007 </td></tr>
   <tr><td> 02 </td><td> APTV解鎖Pro </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/APTV.module"><em>APTV.module</em></a> </td><td> @89996462 </td></tr>
-  <tr><td> 03 </td><td> Emby解鎖播放權限 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Emby.module"><em>Emby.module</em></a> </td><td> @KleinerSource </td></tr>
+  <tr><td> 03 </td><td> Emby解鎖Premium </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Emby.module"><em>Emby.module</em></a> </td><td> @rartv @RuCu6 </td></tr>
   <tr><td> 04 </td><td> Flightradar24解鎖GOLD會員功能 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Flightradar24.module"><em>Flightradar24.module</em></a> </td><td> @安妮 </td></tr>
   <tr><td> 05 </td><td> GitHub解鎖Pro </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/GitHub.module"><em>GitHub.module</em></a> </td><td> @ios151 </td></tr>
   <tr><td> 06 </td><td> Night Sky 解鎖高級訂閱 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Night Sky.module"><em>Night Sky.module</em></a> </td><td> @ios151 </td></tr>
