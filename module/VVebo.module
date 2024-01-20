@@ -1,0 +1,18 @@
+#!name=VVebo
+#!desc=VVebo修復用戶主頁時間線和粉絲列表
+#!author=@suiyuran
+#!UpdateTime=2024-01-20
+
+[Script]
+
+# > 修復用戶主頁時間線
+VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?, requires-body=1,script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, requires-body=1,script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+VVebo = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?,requires-body=1, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?,requires-body=1, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+# > 修復粉絲列表
+VVebo = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/cardlist\?,requires-body=1, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-fans.js, requires-body=true
+
+[MITM]
+
+hostname = %INSERT% api.weibo.cn
