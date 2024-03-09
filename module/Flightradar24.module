@@ -1,0 +1,13 @@
+#!name=Flightradar24
+#!desc=Flightradar24 解鎖GOLD會員功能
+#!author=@安妮
+#!UpdateTime=2023-08-13
+#非一次性解鎖v9.13.1及以下版本，開啟模塊後，進入軟件即可。
+
+[Script]
+
+Flightradar24 = type=http-response,pattern=^https:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js
+
+[MITM]
+
+hostname = %APPEND% mobile.flightradar24.com

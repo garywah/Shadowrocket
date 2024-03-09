@@ -1,0 +1,13 @@
+#!name=Picsew
+#!desc=Picsew 解鎖Pro
+#!author=@Guding88
+#!UpdateTime=2023-07-18
+#一次性解鎖v3.9.4及以下版本後可升級
+
+[Script]
+
+Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% buy.itunes.apple.com

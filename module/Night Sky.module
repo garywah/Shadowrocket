@@ -1,0 +1,13 @@
+#!name=Night Sky
+#!desc=Night Sky 解鎖高級訂閱
+#!author=@ios151
+#!UpdateTime=2023-12-22
+#一次性解鎖
+
+[Script]
+
+Night Sky = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/Xk.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% buy.itunes.apple.com

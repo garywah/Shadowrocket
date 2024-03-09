@@ -1,0 +1,13 @@
+#!name=極簡匯率
+#!desc=極簡匯率解鎖高級會員
+#!author=@chxm1023
+#!UpdateTime=2023-10-24
+#非一次性解鎖，開啟模塊後，進入軟件即可。
+
+[Script]
+
+极简汇率 = type=http-response,pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js
+
+[MITM]
+
+hostname = %APPEND% xremit.xcurrency.com, explorer.tratao.com
