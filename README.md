@@ -3,11 +3,13 @@
 * 懶人配置 [***lazy.conf***](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 * 懶人配置(帶策略組) [***lazy_group.conf***](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
 
+
 ## 🟠Shadowrocket 打開 HTTPS 解密方法：
 
 * 點擊配置文件ⓘ - HTTPS 解密 - 憑證 - 生成新的 CA 憑證 - 安裝憑證
 * 手機設定 - 已下載描述文件 - 安裝
 * 手機設定 - 一般 - 關於本機 - 證書信任列表設定 - 開啟對應 Shadowrocket 證書信任
+
 
 ## 🟠Shadowrocket 模塊：
 
