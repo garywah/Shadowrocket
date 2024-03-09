@@ -1,0 +1,13 @@
+#!name=Emby
+#!desc=Emby 解鎖Premiere
+#!author=@rartv @RuCu6
+#!UpdateTime=2024-01-18
+#非一次性解鎖，開啟模塊後，進入軟件即可。
+
+[Script]
+
+Emby = type=http-response, pattern=^https:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/emby/unlock.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% mb3admin.com
