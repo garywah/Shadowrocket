@@ -1,0 +1,37 @@
+#!name=菜鳥去廣告
+#!desc=菜鳥去廣告
+#!author=@ddgksf2013
+#!UpdateTime=2024-03-21
+#使用前請卸載菜鳥APP，掛載腳本然後使用
+
+[URL Rewrite]
+
+# > 菜鸟裹裹_通用广告请求@ddgksf2013
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn\/ - reject-200
+# > 菜鸟裹裹_支付宝小程序_通用广告请求@ddgksf2013
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.show - reject-200
+# > 菜鸟裹裹_支付宝小程序_底部商品推广新@ddgksf2013
+^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get - reject-200
+# > 菜鸟裹裹_支付宝小程序_底部商品推广旧@ddgksf2013
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad - reject-200
+# > 菜鸟裹裹_支付宝小程序_匿名选择@ddgksf2013
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.consultmerge - reject-200
+
+[Script]
+
+# > 菜鸟裹裹_amdc处理[Anti已将Amdc分流删除,故更换屏蔽策略]@ddgksf2013
+amdc = type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com, script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js, requires-body=true, max-size=-1, timeout=60
+# > 菜鸟裹裹_首页中部的问邻居推广@ddgksf2013
+cainiao_json = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.homepage\.merge\.get\.cn, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, max-size=-1, timeout=60
+# > 菜鸟裹裹_首页中部的惊喜福利推广@ddgksf2013
+cainiao_json = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, max-size=-1, timeout=60
+# > 菜鸟裹裹_搜索框下方今日好物推荐@ddgksf2013
+cainiao_json = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, max-size=-1, timeout=60
+# > 菜鸟裹裹_首页底部商品推广@ddgksf2013
+cainiao_json = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, max-size=-1, timeout=60
+# > 菜鸟裹裹_支付宝小程序_中部的寄件推广[导致的空白占位后续处理]@ddgksf2013
+cainiao_json = type=http-response, pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% cn-acs.m.cainiao.com, guide-acs.m.taobao.com, acs4miniapp-inner.m.taobao.com
