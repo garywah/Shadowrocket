@@ -1,0 +1,17 @@
+#!name=555
+#!desc=555去廣告
+#!author=@ddgksf2013
+#!UpdateTime=2024-04-01
+#去除首頁輪播廣告、首頁信息流廣告、我的頁面推廣、縮短開屏廣告倒計時
+
+[URL Rewrite]
+
+^https?:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,3}(:\d+)?\/api\/v\d\/advert - reject-200
+
+[Script]
+
+555Ad = type=http-response, pattern=^https?:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend, script-path=https://github.com/ddgksf2013/Scripts/raw/master/555Ad.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% *.qyfxgd.cn, *.weilai555.com, *.ecoliving168.com
