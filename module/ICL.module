@@ -1,0 +1,12 @@
+#!name=地震預警ICL
+#!desc=地震預警ICL 解鎖預警服務
+#!author=@chxm1023
+#!UpdateTime=2024-05-01
+
+[Script]
+
+ICL = type=http-response, pattern=^https?:\/\/mobile-new\.chinaeew\.cn\/v\d\/order\/apple\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dzyj.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% mobile-new.chinaeew.cn
