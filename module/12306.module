@@ -1,0 +1,13 @@
+#!name=12306
+#!desc=12306去廣告
+#!author=@ddgksf2013
+#!UpdateTime=2024-08-25
+#!Version=V1.0.23
+
+[Script]
+
+12306 = type=http-request, pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% ad.12306.cn
