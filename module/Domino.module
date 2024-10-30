@@ -1,0 +1,18 @@
+#!name=Domino達美樂
+#!desc=Domino達美樂優惠券抽獎
+#!author=@Sliverkiss
+#!UpdateTime=2024-07-16
+#使用方法：
+#1.將獲取Cookie腳本保存到本地
+#2.打開達美樂公眾號->優惠|資訊->有獎遊戲->手動完成一次遊戲，若提示獲取Cookie成功則可以使用該腳本
+#3.關閉獲取Cookie腳本，避免產生不必要的MITM
+
+[Script]
+
+達美樂 = type=cron, cronexp="30 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, timeout=300
+
+達美樂獲取token = type=http-request, pattern=^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone, script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, requires-body=true, timeout=10
+
+[MITM]
+
+hostname = %APPEND% game.dominos.com.cn
