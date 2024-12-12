@@ -1,0 +1,61 @@
+#!name=ProCrack合集
+#!desc=garywah自用ProCrack合集
+#!author=@chxm1023,@Guding88,@ios151,@rartv,@RuCu6,@安妮
+#!UpdateTime=2024-05-19
+#開啟模塊後，進入軟件即可。
+
+[Script]
+
+#********************Revenuecat系列********************#
+# hostname = api.revenuecat.com
+
+# 🔓 > VSCO 解鎖Pro @chxm1023
+VSCO = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vsco.js
+
+
+#********************iTunes系列********************#
+# hostname = buy.itunes.apple.com
+
+# 🔓 > Night Sky 解鎖高級訂閱 @ios151
+Night Sky = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/Xk.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > Picsew 解鎖Pro @Guding88
+Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, timeout=60, script-update-interval=0
+
+
+#********************其他APP********************#
+
+# 🔓 > AdGuard 解鎖終身高級版 @chxm1023
+# hostname = mobile-api.adguard.org
+AdGuard = type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+
+# 🔓 > Emby 解鎖Premiere @rartv @RuCu6
+# hostname = mb3admin.com
+Emby = type=http-response, pattern=^https:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/emby/unlock.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > Flightradar24 解鎖GOLD會員功能 @安妮
+# hostname = mobile.flightradar24.com
+Flightradar24 = type=http-response,pattern=^https:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js
+
+# 🔓 > GitHub 解鎖Pro @ios151
+# hostname = api.github.com
+GitHub = type=http-response, pattern=https://api.github.com/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Github.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > SpotifyVip @app2smile
+# hostname = spclient.wg.spotify.com
+spotify-proto = type=http-response, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+spotify-json = type=http-request, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60
+
+# 🔓 > 地震預警ICL 解鎖預警服務 @chxm1023
+# hostname = mobile-new.chinaeew.cn
+ICL = type=http-response, pattern=^https?:\/\/mobile-new\.chinaeew\.cn\/v\d\/order\/apple\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dzyj.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > 極簡匯率解鎖高級會員 @chxm1023
+# hostname = xremit.xcurrency.com, explorer.tratao.com
+极简汇率 = type=http-response,pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js
+
+
+
+[MITM]
+
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, mobile-api.adguard.org, mb3admin.com, mobile.flightradar24.com, api.github.com, spclient.wg.spotify.com, mobile-new.chinaeew.cn, xremit.xcurrency.com, explorer.tratao.com
