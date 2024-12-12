@@ -24,9 +24,10 @@
   <tr><td> 06 </td><td> 地震預警ICL 解鎖預警服務 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/ICL.module"><em>ICL.module</em></a> </td><td> @chxm1023 </td></tr>
   <tr><td> 07 </td><td> Night Sky 解鎖高級訂閱 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Night Sky.module"><em>Night Sky.module</em></a> </td><td> @ios151 </td></tr>
   <tr><td> 08 </td><td> Picsew 解鎖Pro </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Picsew.module"><em>Picsew.module</em></a> </td><td> @Guding88 </td></tr>
-  <tr><td> 09 </td><td> VSCO 解鎖Pro </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VSCO.module"><em>VSCO.module</em></a> </td><td> @chxm1023 </td></tr>
-  <tr><td> 10 </td><td> 極簡匯率解鎖高級會員 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/xCurrency.module"><em>xCurrency.module</em></a> </td><td> @chxm1023 </td></tr>
-  <tr><td> 11 </td><td> ProCrack合集 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/ProCrack.module"><em>ProCrack.module</em></a> </td><td> @89996462,@chxm1023,@Guding88,<br>@ios151,@rartv,@RuCu6,@安妮 </td></tr>
+  <tr><td> 09 </td><td> SpotifyVip </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Spotify.module"><em>Spotify.module</em></a> </td><td> @app2smile </td></tr>
+  <tr><td> 10 </td><td> VSCO 解鎖Pro </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VSCO.module"><em>VSCO.module</em></a> </td><td> @chxm1023 </td></tr>
+  <tr><td> 11 </td><td> 極簡匯率解鎖高級會員 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/xCurrency.module"><em>xCurrency.module</em></a> </td><td> @chxm1023 </td></tr>
+  <tr><td> 12 </td><td> ProCrack合集 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/ProCrack.module"><em>ProCrack.module</em></a> </td><td> @89996462,@app2smile,@chxm1023,@Guding88,<br>@ios151,@rartv,@RuCu6,@安妮 </td></tr>
 </table>
 <table>
   <tr><th colspan="4"> 🚫廣告淨化 </th></tr>
