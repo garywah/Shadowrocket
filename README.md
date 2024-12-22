@@ -42,6 +42,11 @@
   <tr><td> 08 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
 </table>
 <table>
+  <tr><th colspan="4"> 🔧應用增強 </th></tr>
+  <tr><th> 序號 </th><th> 功能 </th><th> 鏈接 </th><th> 作者 </th></tr>
+  <tr><td> 01 </td><td> 京東比價 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/JD_Price.module"><em>JD_Price.module</em></a> </td><td> @wf021325 </td></tr>
+</table>
+<table>
   <tr><th colspan="4"> 🎁簽到腳本 </th></tr>
   <tr><th> 序號 </th><th> 功能 </th><th> 鏈接 </th><th> 作者 </th></tr>
   <tr><td> 01 </td><td> Domino達美樂優惠券抽獎 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Domino.module"><em>Domino.module</em></a> </td><td> @Sliverkiss </td></tr>
