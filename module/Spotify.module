@@ -1,0 +1,17 @@
+#!name=SpotifyVip
+#!desc=解鎖部分premium，音質不能設置為超高
+#!author=@app2smile
+#!UpdateTime=2025-03-22
+#登錄後再打開腳本，重啟app等待腳本生效。1.去除播放廣告；2.歌手/專輯列表正常展示；3.去除隨機播放。
+
+[Script]
+
+spotify-qx-header = type=http-request, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/v1\/customize$, script-path=https://raw.githubusercontent.com/app2smile/rules/refs/heads/master/js/spotify-qx-header.js, timeout=60
+
+spotify-proto = type=http-response, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/refs/heads/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+
+spotify-json = type=http-request, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/refs/heads/master/js/spotify-json.js, timeout=60
+
+[MITM]
+
+hostname = %APPEND% spclient.wg.spotify.com
