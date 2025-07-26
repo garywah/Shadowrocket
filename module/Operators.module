@@ -1,0 +1,32 @@
+#!name=運營商抓取CK
+#!desc=garywah自用運營商抓取CK合集
+#!author=@ChinaTelecomOperators,@dompling,@Yuheng0101
+#!UpdateTime=2025-07-22
+#獲取CK後可關閉對應的組件
+
+[General]
+
+force-http-engine-hosts = %APPEND% 10010v4.com, m.client.10010.com
+
+[Script]
+
+# > 中國移動
+# 10086 = type=http-request, pattern=^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/[LD]N\/uam(onekey|randcode)login\/autoLogin, script-path=https://github.com/ChinaTelecomOperators/ChinaMobile/releases/download/Prerelease-Alpha/10086.js, requires-body=true, max-size=-1, timeout=60
+
+# > 中國聯通(v4)
+# > Response
+# 10010v4-response = type=http-response,pattern=^https?:\/\/m\.client\.10010\.com\/mobileService\/onLine\.htm,script-path=https://mirror.ghproxy.com/https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/10010_capture.js,requires-body=true,max-size=0,timeout=120
+# > Cron
+# 10010v4-cron = type=cron,cronexp=*/5 * * * *,timeout=120,script-path=https://mirror.ghproxy.com/https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/10010.js
+# > Request
+# 10010v4-request = type=http-request,pattern=^https?:\/\/10010v4\.com,script-path=https://mirror.ghproxy.com/https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/10010.js,requires-body=false,max-size=0,timeout=120
+
+# > 中國電信
+# 电信登录地址 = type=http-request, pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle, script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, requires-body=true, max-size=0, script-update-interval=0
+
+# > 中國移動供小組件使用，常開
+移动查询接口 = type=http-request, pattern=^https?:\/\/api\.example\.com\/10086\/query, script-path=https://github.com/ChinaTelecomOperators/ChinaMobile/releases/download/Prerelease-Alpha/10086.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% client.app.coc.10086.cn, 10010v4.com, m.client.10010.com, e.dlife.cn, api.example.com
