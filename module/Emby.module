@@ -1,0 +1,30 @@
+#!name=Emby
+#!desc=Emby 解鎖 & 增強
+#!author=@renzhipengBot原創 @AppleArcade魔改 @ddgksf2013整理
+#!UpdateTime=2024-01-25
+#!Version=V1.0.2
+#非一次性解鎖，開啟模塊後，進入軟件即可。
+
+[Script]
+
+# > 播放解锁
+unlock = type=http-response, pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/quantumult-x/unlock.js, requires-body=true, max-size=-1, timeout=60
+
+# > 添加外部播放器连接
+emby-plugin = type=http-response, pattern=\/[Uu]sers\/\w{32}\/[Ii]tems\/\d+\??, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, requires-body=true, max-size=-1, timeout=60
+
+# > 打开外部播放器
+emby-plugin = type=http-request, pattern=\/plugin\/scheme, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, timeout=60
+
+# > 资源路径伪静态
+emby-plugin = type=http-request, pattern=(\/[Vv]ideos\/\d+\/stream\/.+\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/\d+\/.+\?.+&filename), script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, timeout=60
+
+# > 下载文件重命名
+download_file_rename = type=http-response, pattern=(\/[Vv]ideos\/\d+\/stream\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/.+&filename), script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/download_file_rename.js, timeout=60
+
+# > 解决QX抓取某些公益服该请求乱码问题
+replaceHeader = type=http-request, pattern=\/Users\/\w{32}\/Items\/\d+\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-header.js, timeout=30, argument=(%5Cr%5Cn)Accept-Encoding%3A.%2B-%3E%24Accept-Encoding%3A%20gzip%2C%20deflate%2C%20br
+
+[MITM]
+
+hostname = %APPEND% mb3admin.com, *.emby.wtf, *.plusmedia.site
