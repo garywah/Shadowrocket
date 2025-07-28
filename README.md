@@ -36,15 +36,17 @@
   <tr><td> 02 </td><td> 12306去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/12306.module"><em>12306.module</em></a> </td><td> @ddgksf2013 </td></tr>
   <tr><td> 03 </td><td> 高德地圖去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Amap.module"><em>Amap.module</em></a> </td><td> @ddgksf2013 </td></tr>
   <tr><td> 04 </td><td> 菜鳥去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Cainiao.module"><em>Cainiao.module</em></a> </td><td> @ddgksf2013 </td></tr>
-  <tr><td> 05 </td><td> VVebo修復用戶主頁 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VVebo.module"><em>VVebo.module</em></a> </td><td> @suiyuran </td></tr>
-  <tr><td> 06 </td><td> 微信公眾號去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeChat.module"><em>WeChat.module</em></a> </td><td> @ddgksf2013 </td></tr>
-  <tr><td> 07 </td><td> 微博(國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Weibo.module"><em>Weibo.module</em></a> </td><td> @ddgksf2013 @zmqcherish </td></tr>
-  <tr><td> 08 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
+  <tr><td> 05 </td><td> 微信公眾號去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/WeChat.module"><em>WeChat.module</em></a> </td><td> @ddgksf2013 </td></tr>
+  <tr><td> 06 </td><td> 微博(國際版)去廣告 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Weibo.module"><em>Weibo.module</em></a> </td><td> @ddgksf2013 @zmqcherish </td></tr>
+  <tr><td> 07 </td><td> Youtube去廣告、視頻畫中畫、後台播放 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/YoutubeAds.module"><em>YoutubeAds.module</em></a> </td><td> @DivineEngine @ddgksf2013<br>@Maasea @VirgilClyne </td></tr>
 </table>
 <table>
   <tr><th colspan="4"> 🔧應用增強 </th></tr>
   <tr><th> 序號 </th><th> 功能 </th><th> 鏈接 </th><th> 作者 </th></tr>
-  <tr><td> 01 </td><td> 京東比價 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/JD_Price.module"><em>JD_Price.module</em></a> </td><td> @wf021325 </td></tr>
+  <tr><td> 01 </td><td> Apple助手 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Helper.module"><em>Helper.module</em></a> </td><td> @LOWERTOP </td></tr>
+  <tr><td> 02 </td><td> 京東比價 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/JD_Price.module"><em>JD_Price.module</em></a> </td><td> @wf021325 </td></tr>
+  <tr><td> 03 </td><td> 運營商抓取CK </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/Operators.module"><em>Operators.module</em></a> </td><td> @ChinaTelecomOperators<br>@dompling @Yuheng0101 </td></tr>
+  <tr><td> 04 </td><td> VVebo修復用戶主頁 </td><td> <a href="https://raw.githubusercontent.com/garywah/Shadowrocket/main/module/VVebo.module"><em>VVebo.module</em></a> </td><td> @suiyuran </td></tr>
 </table>
 <table>
   <tr><th colspan="4"> 🎁簽到腳本 </th></tr>
