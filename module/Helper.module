@@ -1,0 +1,17 @@
+#!name=Apple助手
+#!desc=Apple商店下載加速、系統升級加速，可進入參數編輯進行設置
+#!author=@LOWERTOP
+#!UpdateTime=2025-07-22
+#!arguments=商店下载加速:iosapps, 商店加速地址:iosapps.itunes.apple.com.download.ks-cdn.com, 系统升级加速:updates, 升级加速地址:updates.cdn-apple.com.download.ks-cdn.com
+#!arguments-desc=🔘 商店下载加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   iosapps.itunes.apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   hls.itunes.apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   iosapps.itunes.apple.com.m.alikunlun.net\n\n🔘 系统升级加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   updates.cdn-apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   updates.cdn-apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   updates.cdn-apple.com.w.kunlunca.com
+
+[Rule]
+# 加速需要直连
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+
+[Host]
+iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
+updates.cdn-apple.com = updates.cdn-apple.com.download.ks-cdn.com
+updates.cdn-apple.com.akadns.net = updates.cdn-apple.com.download.ks-cdn.com
+updates.g.aaplimg.com = updates.cdn-apple.com.download.ks-cdn.com
