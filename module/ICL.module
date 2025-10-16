@@ -1,0 +1,12 @@
+#!name=地震預警ICL
+#!desc=地震預警ICL 解鎖SVIP
+#!author=@Yu9191
+#!UpdateTime=2025-10-14
+
+[Script]
+
+ICL = type=http-response, pattern=https://mobile-new.chinaeew.cn/v1/order/apple/vip, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/dzyj.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+
+hostname = %APPEND% mobile-new.chinaeew.cn

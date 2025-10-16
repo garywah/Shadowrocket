@@ -1,0 +1,73 @@
+#!name=ProCrack合集
+#!desc=garywah自用ProCrack合集
+#!author=@app2smile,@AppleArcade,@chxm1023,@ddgksf2013,@Guding88,@ios151,@renzhipengBot,@Yu9191,@安妮
+#!UpdateTime=2025-10-15
+#開啟模塊後，進入軟件即可。
+
+[Script]
+
+#********************Revenuecat系列********************#
+# hostname = api.revenuecat.com
+
+# 🔓 > VSCO 解鎖Pro @chxm1023
+VSCO = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vsco.js, requires-body=true, max-size=-1, timeout=60
+
+
+#********************iTunes系列********************#
+# hostname = buy.itunes.apple.com
+
+# 🔓 > Night Sky 解鎖高級訂閱 @ios151
+Night Sky = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/Xk.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > Picsew 解鎖Pro @Guding88
+Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, timeout=60, script-update-interval=0
+
+
+#********************其他APP********************#
+
+# 🔓 > AdGuard 解鎖終身高級版 @chxm1023
+# hostname = mobile-api.adguard.org
+AdGuard = type=http-response, pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > Emby 解鎖 & 增強 @renzhipengBot原創 @AppleArcade魔改 @ddgksf2013整理
+# hostname = mb3admin.com, *.emby.wtf, *.plusmedia.site
+# > 播放解锁
+unlock = type=http-response, pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/quantumult-x/unlock.js, requires-body=true, max-size=-1, timeout=60
+# > 添加外部播放器连接
+emby-plugin = type=http-response, pattern=\/[Uu]sers\/\w{32}\/[Ii]tems\/\d+\??, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, requires-body=true, max-size=-1, timeout=60
+# > 打开外部播放器
+emby-plugin = type=http-request, pattern=\/plugin\/scheme, script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, timeout=60
+# > 资源路径伪静态
+emby-plugin = type=http-request, pattern=(\/[Vv]ideos\/\d+\/stream\/.+\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/\d+\/.+\?.+&filename), script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/emby-plugin.js, timeout=60
+# > 下载文件重命名
+download_file_rename = type=http-response, pattern=(\/[Vv]ideos\/\d+\/stream\?.+&filename)|(\/[Vv]ideos\/\d+\/\w{32}\/[Ss]ubtitles\/.+&filename), script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/refs/heads/test/surge/download_file_rename.js, timeout=60
+# > 解决QX抓取某些公益服该请求乱码问题
+replaceHeader = type=http-request, pattern=\/Users\/\w{32}\/Items\/\d+\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-header.js, timeout=30, argument=(%5Cr%5Cn)Accept-Encoding%3A.%2B-%3E%24Accept-Encoding%3A%20gzip%2C%20deflate%2C%20br
+
+# 🔓 > Flightradar24 解鎖GOLD會員功能 @安妮
+# hostname = mobile.flightradar24.com
+Flightradar24 = type=http-response,pattern=^https:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flightradar24.js
+
+# 🔓 > GitHub 解鎖Pro @ios151
+# hostname = api.github.com
+GitHub = type=http-response, pattern=https://api.github.com/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Github.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > SpotifyVip @app2smile
+# hostname = spclient.wg.spotify.com, *spclient.spotify.com
+spotify-qx-header = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js, timeout=60
+spotify-proto = type=http-response, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+spotify-json = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60
+
+# 🔓 > 地震預警ICL 解鎖SVIP @Yu9191
+# hostname = mobile-new.chinaeew.cn
+ICL = type=http-response, pattern=https://mobile-new.chinaeew.cn/v1/order/apple/vip, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/dzyj.js, requires-body=true, max-size=-1, timeout=60
+
+# 🔓 > 極簡匯率解鎖高級會員 @ddgksf2013
+# hostname = explorer.tratao.com
+极简汇率 = type=http-response, pattern=^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip, script-path=https://github.com/ddgksf2013/MoYu/raw/master/JiJianHuiLvProCrack.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+[MITM]
+
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, mobile-api.adguard.org, mb3admin.com, *.emby.wtf, *.plusmedia.site, mobile.flightradar24.com, api.github.com, spclient.wg.spotify.com, *spclient.spotify.com, mobile-new.chinaeew.cn, explorer.tratao.com

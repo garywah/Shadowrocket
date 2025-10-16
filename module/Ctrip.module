@@ -1,0 +1,14 @@
+#!name=Ctrip攜程旅行簽到
+#!desc=Ctrip攜程旅行簽到
+#!author=@NobyDa,@ddgksf2013
+#!UpdateTime=2025-07-06
+#使用方法：登錄攜程旅行微信小程序或攜程網頁版即可獲取賬號授權
+
+[Script]
+
+Ctrip = type=http-response, pattern=^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?), script-path=https://github.com/ddgksf2013/Scripts/raw/master/ctrip.js, requires-body=true, max-size=-1, timeout=60
+Ctrip = type=cron, cronexp="15 7,15 * * *", script-path=https://github.com/ddgksf2013/Scripts/raw/master/ctrip.js, timeout=120, wake-system=1
+
+[MITM]
+
+hostname = %APPEND% m.ctrip.com
