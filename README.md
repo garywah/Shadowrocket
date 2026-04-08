@@ -2,6 +2,7 @@
 
 * 懶人配置 [***lazy.conf***](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
 * 懶人配置(帶策略組) [***lazy_group.conf***](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+* 墨魚自用配置 [***Shadowrocket.conf***](https://ddgksf2013.top/Profile/Shadowrocket.conf)
 
 
 ## 🟠Shadowrocket 打開 HTTPS 解密方法：
